@@ -1,0 +1,96 @@
+/* universal selector */
+* {
+    font-family: 'Permanent Marker', cursive;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* tag/elements */
+
+body{
+    background-color: #f1faee;
+}
+
+a {
+    color: #f1faee;
+    text-decoration: none;
+    font-size: 30px
+}
+
+
+header {
+    width: 100%;
+    background-color:#e9d8a6;
+    color: #f1faee;
+    padding: 20px;
+}
+h1{
+    display:inline-block;
+    font-size: 40px;
+    
+}
+header nav{
+    float: right;
+
+
+}
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display:inline-block;
+    padding-right: 25px;
+
+}
+
+main {
+    height: 80%;
+    padding: 20px;
+}
+
+.highlights{
+    color: #e9d8a6;
+}
+
+
+.about-mj{
+    height: 300px;
+    padding: 45px;
+    display: block;
+}
+
+.about-mj img{
+    height: 250px;
+    width: auto;
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.projects {
+    height: 300px;
+    padding: 45px;
+    display: block;
+}
+
+.projects img{
+    height: 250px;
+    width: auto;
+    border: 5px solid black;
+}
+
+.contacts{
+    height: 300px;
+    padding: 45px;
+    width: auto;
+    display: block;
+}
+
+footer {
+padding: 20px;
+}
+
+
