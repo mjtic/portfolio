@@ -1,170 +1,202 @@
+/* :root {
 
-body{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: #f1faee;
-    line-height: 1.5;
+} */
+
+html {
+  /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+  font-size: 40.5%;
+}
+
+/* body is for font fmaily, background colors, size, etc. */
+body {
+  font-family: sans-serif;
+  /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
+  font-size: 1.75rem;
+  line-height: 1.5;
+  background-color: #edf2f4;
+  color: #284b63;
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    padding: 1%;
-    background-color:#e9d8a6;
-    color: #f1faee;
-    border-bottom: 5px solid #ff17;
-    text-align: center;
-}
-main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #353535;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
-h1 {
-   padding-left: 50px;
-    font-size: 200%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+div.baseline {
+  display: inherit;
+  align-items: baseline;
 }
 
-h2.highlights{
-    font-size: 175%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 5% 0;
+header h1.page-title {
+  font-size: 3rem;
+  padding-left: 2rem;
+  border: 1px;
+  border-style: solid #94d2bd;
+  background-color: #94d2bd;
+  margin: 0.9rem 0;
 }
 
-header nav ul {
-    padding-right:20px;
+header nav {
+  display: inherit;
+  flex-wrap: wrap;
+  font-size: 103%;
+  color: #94d2bd;
+  padding-left: 9rem;
+  margin-left: 1rem;
 }
 
 header nav ul li {
-    display:inline-block;
-    padding-right: 35px;
+  display: inline-flex;
+  justify-content: flex-end;
+  padding-left: 2rem;
 }
 
 header nav a {
-    font-size: 24px;
-}
-header nav a:visited {color: inherit;}
-
-main {
-    height: 80%;
-    padding: 20px;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
+.highlights:hover {
+  color: #edf2f4;
+  text-decoration: none;
+  font-weight: bold;
+  transition-duration: 0.6s;
+  box-shadow: inset 0px -30px 0 0px #edf2f4;
+}
+
+header nav a:visited {
+  color: inherit;
+}
+
+div.welcome {
+  border: #94d2bd;
+  border-radius: rem;
+}
 .welcome {
-
-        height: 800px;
-        width: 100%;
-        margin-bottom: 25px;
-        background-image: url("./coding.avif");
-        background-size: cover;
-        background-position: center;
-    }
-
-
-
-.highlights{
-    color: #e9d8a6;
-    text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 24vh;
+  width: webkit-fill-available;
+  background-image: url("./portfolio-mj2.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  align-content: space-between;
+}
+div.welcome > p {
+  border: 0.5rem solid #94d2bd;
+  background-color: #94d2bd;
+  color: #284b63;
+  display: flex;
+  margin: 23.7rem 0 0 46.9rem;
 }
 
-
-.highlights:hover{
-    color: red;
+section {
+  display: flex;
+  background-color: #ededed;
+  color: #353535;
+  padding: 1rem;
+  width: webkit-fill-available;
+  text-decoration: none;
 }
 
-
-.about-mj{
-    /* height: 300px; */
-    padding: 45px;
-    text-align: center;
+h2.highlights {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: #353535;
+  padding: 1rem;
+  margin: 0;
+  font-size: 2rem;
+  border-right: 4px solid #284b63;
+  width: 10rem;
+  text-align: right;
+  text-decoration: none;
 }
 
-.about-mj img{
-    height: 500px;
-    width: auto;
-    border: 5px solid black;
-    border-radius: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    float: right;
-    
+section h2 > p {
+  color: #353535;
+  margin: 0rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  
 }
-
-div{
-    display: inline-block;
-    flex-wrap: wrap;
-    flex-direction: row;
-    ;
-}
-.projects {
-    /* height: 300px; */
-    padding: 45px;
-    display: inline-block;
+.main {
+  width: 85%;
+  text-align: left;
+  padding-left: 1rem;
+  text-decoration: none;
 }
 
 #first-project{
-    height:600px;
-    width: auto ;
-    display: flex;
+  height:15vh;
+  width: auto ;
+  display: flex;
+  border: 5px solid black;
+  margin-left: 10rem;
+  margin-bottom: 1rem;
 }
 
-.projects img{
-    height: 450px;
-    width: 450px;
-    border: 5px solid black;
-    
-
+#second-project{
+  height:13vh;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10.5rem;
+  margin-bottom: 1rem;
+  border: 5px solid black;
 }
-
-.projects a{
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.contact{
-    /* height: 300px; */
-    padding: 45px;
-    display: block;
-    color: black;
-    text-align: center;
-}
-
-.contact ul {
-    list-style-type: none;
-}
-
-footer {
-padding: 20px;
+#third-project{
+  height:13vh;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10.5rem;
+  border: 5px solid black;
 }
 
 
-/* media */
-@media screen and (max-width:992px) {
-    main {
-    display: grid;
-    grid-template-columns:repeat(1,6fr);}
+
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  body {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  body:last-child {
+    flex-grow: 1;
+  }
 }
 
-@media screen and (max-width:768px) {
-    main {
-    display: grid;
-    grid-template-columns:repeat(2,6fr);}
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  body {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
 }
 
-@media screen and (max-width:767px) {
-    main {
-    display: grid;
-    grid-template-columns:repeat(1,6fr);}
-}
-    
+
+
+
+
+
