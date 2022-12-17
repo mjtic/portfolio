@@ -170,19 +170,29 @@ section h2 > p {
 
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-@media screen and (min-width: 768px) {
-  /* on tablets, set columns to only be 50% of the width and not grow */
+/* @media screen and (min-width: 370px) {
+  header p{
+    width: 100%;
+  }
   body {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 0%;
+    max-height: 50%;
+    max-width: 100%;
   }
-
-  /* select the last child to grow to full width if it has space to grow */
-  body:last-child {
-    flex-grow: 1;
+  } */
+ 
+/* on tablets, set columns to only be 50% of the width and not grow */
+  @media screen and (min-width: 768px) {
+  div.welcome{
+    flex: 0 0 0%;
+    width: 50%;
   }
+section{
+  flex: 0 0 50%;
+  max-width: 50%;
+  max-height: fit-content;
+}  
 }
-
 /* media query for larger screens */
 @media screen and (min-width: 992px) {
   header {
