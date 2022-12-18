@@ -1,173 +1,123 @@
-/* :root {
-
-} */
+/* FONTS */
+/* --BODY-FONT-FAMILY: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+ */
 
 html {
-  /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
-  font-size: 40.5%;
+  /* set 1rem to 10px instead of native 16px to make it easier to calculate 
+  font-size values for the rest of the page 
+  (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+  /* font-size: 62.5%; */
+
+  height: auto;
 }
 
 /* body is for font fmaily, background colors, size, etc. */
 body {
-  font-family: sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
-  font-size: 1.75rem;
   line-height: 1.5;
-  background-color: #edf2f4;
-  color: #284b63;
 }
+
+/* header with flex-box to make flexable/wrap and to keep space between h1 and nav bar*/
 
 header {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  position: sticky;
-  top: 0;
   background-color: #353535;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1%;
 }
 
-div.baseline {
-  display: inherit;
-  align-items: baseline;
-}
-
-header h1.page-title {
-  font-size: 3rem;
-  padding-left: 2rem;
-  border: 1px;
-  border-style: solid #94d2bd;
+header h1 {
   background-color: #94d2bd;
-  margin: 0.9rem 0;
+  font-size: 55px;
+  line-height: normal;
+  padding: 0 15px 0 5%;
+}
+
+header h1 a {
+  text-decoration: none;
+  columns: #353535;
 }
 
 header nav {
-  display: inherit;
-  flex-wrap: wrap;
-  font-size: 103%;
+  padding-right: 5%;
+}
+
+/* header-nav links with flex items */
+.header-nav {
+  display: flex;
+}
+
+.header-nav li {
+  padding: 5px;
+}
+
+.header-nav a {
   color: #94d2bd;
-  padding-left: 9rem;
-  margin-left: 1rem;
-}
-
-header nav ul li {
-  display: inline-flex;
-  justify-content: flex-end;
-  padding-left: 2rem;
-}
-
-header nav a {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.highlights:hover {
-  color: #edf2f4;
+  font-size: 24px;
   text-decoration: none;
-  font-weight: bold;
-  transition-duration: 0.6s;
-  box-shadow: inset 0px -30px 0 0px #edf2f4;
+  padding: 5px 10px;
+  border-bottom: 4px solid #94d2bd;
 }
 
-header nav a:visited {
-  color: inherit;
+/* .header-nav a :hover {} */
+
+.welcome-banner {
+  background-image: url("./welcome-banner.avif");
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  height: fit-content;
+  position: relative;
 }
 
-div.welcome {
-  border: #94d2bd;
-  border-radius: rem;
+/* h1 {
+  font-size: 40px;
 }
-.welcome {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 24vh;
-  width: webkit-fill-available;
-  background-image: url("./portfolio-mj2.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  align-content: space-between;
+
+h2 {
+  font-size: 30px;
 }
-div.welcome > p {
-  border: 0.5rem solid #94d2bd;
+
+p {
+  font-size: 14px;
+} */
+
+.welcome-banner h2 {
   background-color: #94d2bd;
-  color: #284b63;
-  display: flex;
-  margin: 23.7rem 0 0 46.9rem;
-}
-
-section {
-  display: flex;
-  background-color: #ededed;
   color: #353535;
-  padding: 1rem;
-  width: webkit-fill-available;
-  text-decoration: none;
-}
-
-h2.highlights {
+  font-size: 35px;
+  padding: 0 10px;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  color: #353535;
-  padding: 1rem;
-  margin: 0;
-  font-size: 2rem;
-  border-right: 4px solid #284b63;
-  width: 10rem;
-  text-align: right;
-  text-decoration: none;
-}
-
-section h2 > p {
-  color: #353535;
-  margin: 0rem;
+  justify-content: center;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  text-decoration: none;
-  
-}
-.main {
-  width: 85%;
-  text-align: left;
-  padding-left: 1rem;
-  text-decoration: none;
+  position: absolute;
+  bottom: 20px;
+  right: 5%;
 }
 
-#first-project{
-  height:15vh;
-  width: auto ;
-  display: flex;
-  border: 5px solid black;
-  margin-left: 10rem;
-  margin-bottom: 1rem;
+/* reference from mini-project2 css grid */
+/* dividing main into two separate sections 16% is the headings such as about mj, projects, cotacts 
+and 76% is the main contents. the gap is to give space between the headings and contents. */
+.container {
+  width: 92%;
+  padding-bottom: 120px;
+  margin: 40px auto 0px auto;
+  display: grid;
+  grid-template-columns: 16% 76%;
+  gap: 4%;
 }
 
-#second-project{
-  height:13vh;
-  width: auto;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 10.5rem;
-  margin-bottom: 1rem;
-  border: 5px solid black;
+.link-sections {
+  border-right: 4px solid #445874;
+  font-size: 40px;
+  text-align: end;
+  padding-right: 15px;
 }
-#third-project{
-  height:13vh;
-  width: auto;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 10.5rem;
-  border: 5px solid black;
-}
-
-
-
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 /* @media screen and (min-width: 370px) {
@@ -180,21 +130,21 @@ section h2 > p {
     max-width: 100%;
   }
   } */
- 
+
 /* on tablets, set columns to only be 50% of the width and not grow */
-  @media screen and (min-width: 768px) {
-  div.welcome{
+/* @media screen and (min-width: 768px) {
+  div.welcome {
     flex: 0 0 0%;
     width: 50%;
   }
-section{
-  flex: 0 0 50%;
-  max-width: 50%;
-  max-height: fit-content;
-}  
-}
+  section {
+    flex: 0 0 50%;
+    max-width: 50%;
+    max-height: fit-content;
+  }
+} */
 /* media query for larger screens */
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   header {
     width: 75%;
   }
@@ -203,10 +153,4 @@ section{
     flex: 0 0 33.333%;
     max-width: 33.333%;
   }
-}
-
-
-
-
-
-
+} */
