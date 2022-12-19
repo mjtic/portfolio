@@ -1,25 +1,34 @@
-# module2-portfolio
+# Module2-Challenge
 
-Professional portfolio
-##User Story##
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+## Description:
+This was a scenerio an employer requesting to view a potential employee's deployed portfolio of work samples. This page, must include, the name, recent photo, links to 
+section about them, previous work and how to contact them. It was really fun to apply what I have learned in class inclduing the time i spent to research CSS grid, media queary and on.
 
-##Acceptance Criteria##
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
 
-##Mock-up##
-https://courses.bootcampspot.com/courses/2967/files/2418237/preview
+
+## Table of Contents
+
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Mock-up](#mock-up)
+
+## Usage
+- Github page (https://github.com/mjtic/module2-portfolio/)
+- URL (https://mjtic.github.io/module2-portfolio/)
+
+![Horiseon-webpage](./assets/portfolio-module2.png)
+
+## Credits
+- As part of bootcamp module 2 challenged I have referenced sites shown below including mini-challenge 2 within UT-Austin bootcamp program:
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
+https://css-tricks.com/almanac/properties/g/grid-template-columns/
+## License
+
+Please refer to the LICENSE in the repo.
+
+
+
+## Mock-up##
+https://github.com/the-Coding-Boot-Camp-at-UT/UTA-VIRT-FSF-FT-12-2022-U-LOLC/raw/main/02-Advanced-CSS/02-Challenge/Assets/02-advanced-css-homework-demo.gif
