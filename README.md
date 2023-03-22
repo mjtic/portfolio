@@ -1,10 +1,12 @@
-# Module2-Challenge
+# Portfolio
 
 ## Description:
-This was a scenerio an employer requesting to view a potential employee's deployed portfolio of work samples. This page, must include, the name, recent photo, links to 
-section about them, previous work and how to contact them. It was really fun to apply what I have learned in class inclduing the time i spent to research CSS grid, media queary and on.
+This portfolio page includes the name, recent photo, links to 
+section about them, previous projects and how to contact me. It was really fun to apply what I have learned in class inclduing the time i spent to research CSS grid, media query and on.
 
-
+## Tools
+- HTML
+- CSS
 
 ## Table of Contents
 
@@ -15,7 +17,7 @@ section about them, previous work and how to contact them. It was really fun to 
 
 ## Usage
 - Github page (https://github.com/mjtic/module2-portfolio/)
-- URL (https://mjtic.github.io/module2-portfolio/)
+- URL (https://mjtic.github.io/portfolio/)
 
 ![Horiseon-webpage](./assets/portfolio-module2.png)
 
